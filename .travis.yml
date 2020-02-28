@@ -1,0 +1,6 @@
+services:
+  - docker
+
+script:
+  - docker image build -t benkew/blatest .
+  - docker container run benkew/blatest
